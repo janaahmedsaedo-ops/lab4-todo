@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="lab4.CSS" />
+</head>
+<body>
+    <div class="app">
+        <h2>Todo App</h2>
+
+        <div class="add-row">
+            <input id="task-input" type="text" placeholder="What needs doing?" />
+            <button id="add-btn" class="btn-primary">Add</button>
+        </div>
+
+        <div class="toolbar">
+            <span class="tip">Tip: double-click a todo to edit. Press Enter to save.</span>
+            <div class="filters">
+                <button id="filter-all" class="filter active">All</button>
+                <button id="filter-active" class="filter">Active</button>
+                <button id="filter-completed" class="filter">Completed</button>
+            </div>
+        </div>
+
+        <div id="task-list"></div>
+
+        <div class="footer">
+            <p id="counter">0 items left</p>
+            <div class="footer-actions">
+                <button id="clear-completed" class="btn-link">Clear completed</button>
+                <button id="clear-all" class="btn-link">Clear all</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="lab4.js"></script>
+</body>
+</html>
